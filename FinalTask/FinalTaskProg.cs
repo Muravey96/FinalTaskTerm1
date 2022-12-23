@@ -8,3 +8,10 @@ Console.WriteLine($"{String.Join(" ", userArray)}  -> {String.Join(" ", finalArr
 
 ////////////////////////
 
+string[] FillArray(int n)
+{
+    string[] filledArray = new string[n];
+    Console.WriteLine($"Введите {n} элемента/ов:");
+    for (int i = 0; i < n; i++) filledArray[i] = Console.ReadLine() ?? "";    
+    return filledArray;
+}
